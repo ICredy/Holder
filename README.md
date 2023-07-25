@@ -22,7 +22,7 @@ Step 1: Clone the aries-cloudagent-python project in your system from this link:
 
 Step 2: Starting the holder agent Open git bash and navigate to the folder where the agent project is cloned.
 
-Step 3: Then write the command ACME Agent: cd /aries-cloudagent-python/demo.
+Step 3: Then write the command ALICE Agent: cd /aries-cloudagent-python/demo.
 
 Step 4: Then, to run the agent, write ./run_demo alice, and In case of error, docker rm -f alice. Now we have successfully run the agent.
 

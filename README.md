@@ -10,7 +10,31 @@ Web controller for a Hyperledger Aries Alice CloudAgent (aca-py)
     - [Start the Application](#start-the-application)
 - [Notes](#notes)
 
-### Running Locally
+### Running Locally (Steps to start)
+Note: Before carrying out the following process, start up the von-network from Docker on localhost:9000, as the agent requires the von-network, and without starting it, it won't work.
+Commands:
+cd von-network
+./manage build
+./manage start --logs
+visit: localhost:9000
+
+Step 1: Clone the aries-cloudagent-python project in your system from this link:https://github.com/hyperledger/aries-cloudagent-python
+
+Step 2: Starting the holder agent Open git bash and navigate to the folder where the agent project is cloned.
+
+Step 3: Then write the command ACME Agent: cd /aries-cloudagent-python/demo.
+
+Step 4: Then, to run the agent, write ./run_demo alice, and In case of error, docker rm -f alice. Now we have successfully run the agent.
+
+Step 5: Now we will run the controller project. Clone the controller project in your system from the GitHub link:https://github.com/hyperledger/aries-acapy-controllers.(Prerequisite: Node.js needs to be installed), npm install -g @angular/cli	.
+
+Step 6: Navigate to the folder in another bash tab using the command cd /aries-acapy-controllers/AliceFaberAcmeDemo/controllers/alice-controller.
+
+Step 7: Write npm install OR npm install --force
+
+Step 8: To start the production server write ng serve
+
+Step 9: Start the project on localhost:4200
 
 #### Prerequisites
 
